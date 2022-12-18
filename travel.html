@@ -5,7 +5,222 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>travel</title>
 </head>
+   <style>
+	   
+	   *{
+             box-sizing: border-box;
+	     font-family: calibri;
+             font-size: 20px;
+	     list-style: none;
+	     text-decoration: none;
+	   }
+	   body {
+	     margin: 0;
+	     padding: 0;
+	     width: 100%;
+             height: 100%;
+	     background-image: url(back.jpg);
+	     background-size: 100% 100%;
+	     background-repeat: no-repeat;
+	   }
+	   /*horizontal navbar styles starts*/
+	   
+	   .horizontalnavbar {
+		   justify-content: space-between;
+		   background-color: rgb(0,0,0,.3);
+		   color: white;
+		   display: flex;
+		   align-item: center;
+		   text-align: center;	   
+	   }
+	   .title {
+		   font-size: 1.5rem;
+		   margin: .5rem;
+		   margin-left: 20px;
+	   }
+	   .horintalnavlist ul {
+		   margin: 0;
+		   padding: 0;
+		   display: flex;
+	   }
+	   .horintalnavlist li {
+                   transition: .5s;
+	   }
+	   
+	   .horintalnavlist li a{
+		   color: white;
+                   padding: 20px;
+		   display: block;
+	   }
+	   .horintalnavlist li:hover {
+                   background-color: gray;
+	   }
+	   /*horizontal navbar styles ends*/
+	   
+	   /*container styles starts*/
+	   
+	   .container{
+		   margin: 0;
+		   padding: 0;
+		   width: 100%;
+                   height: 100%;   
+	   }
+	   .main{
+	     width: 100%;
+             height: 100%;
+	     display: flex;
+	     text-align: center;
+	     justify-content: space-around;
+	   }   
+	   /*container styles ends*/
+	   
+	   /*sidenav styles starts*/
+	   .sidenav{
+	       width 20%;
+               height: 100vh;
+	       background-color: rgb(0,0,0,.3);
+	   }
+	   sidenav ul{
+		 margin: 0;
+		 padding: 0; 	 
+	   }
+	   sidenav li a{
+		   color: white;
+		   padding: 20px;
+		   display: block;
+		   transition: .5s;
+	   }
+	   sidenav li a:hover{
+		   background-color: gray;
+		   color: white;
+	   }   
+	   /*sidenav styles ends*/
+	   
+	   /* main content styles starts*/
+	   .main-content{
+		   display: flex;
+		   width: 80%;
+		   justify-content: space-around;
+	   }
+	   .contenttitle{
+		   margin: 0;
+		   padding: 0;
+		   position: relative;
+		   top: 50px;
+		   left: 0px;
+		   color: white;
+		   background-color: black;
+		   width: 50%;
+	   }
+	   .contenttitle h1{
+		   font-size: 100px;
+	   }
+	   
+	   /* main content styles ends*/
+	   
+	   /* placeholder styles starts*/
+	   #place1 {
+		   position: relative;
+		   width: 50%;
+		   height: 30%;
+		   bacground-color: rgb(0,0,0,.1);
+		   text-align: left;
+		   overflow: hidden;
+	   }
+	   #place2 {
+		   position: relative;
+		   width: 50%;
+		   height: 30%;
+		   bacground-color: rgb(0,0,0,.1);
+		   text-align: left;
+		   overflow: hidden;
+	   }
+	   #place3 {
+		   position: relative;
+		   width: 50%;
+		   height: 30%;
+		   bacground-color: rgb(0,0,0,.1);
+		   text-align: left;
+		   overflow: hidden;
+	   }
+	   /* placeholder styles ends*/
+	   
+	   
+   </style>
 <body>
+   <!--For horizontal navbar--->
+	<div class="horizantalnavbar">
+	     <div class="title">Travel</div>
+	     <div class="horizontalnavlist">
+		     <ul>
+			<li><a href ="#">Profile<a/></li>
+			<li><a href ="#">Career<a/></li>
+		        <li><a href ="#">Travel<a/></li>
+		     </ul>
+	     </div>
+        </div>
+   <!--For horizontal navbar--->
+   <!--Code for Container--->
+	<div class="container">
+	   <div class="main">
+	     <div class="sidenav">
+		  <ul>
+	              <li><a href="#">Japan</a></li>
+	              <li><a href="#">Brazil</a></li>
+	             <li><a href="#">Italy</a></li>
+		  </ul>
+	     </div>
+	  </div>
+		
+	</div>
+   <!--Code for Container--->
+   <!--Code for maincontent--->
+	
+	<div class="main-content">
+	  <div class="contenttitle">
+		  <h1>TRAVEL</h1>
+	  </div>
+	</div>
+   <!--Code for placeholder--->
+	<div class="placeholder" id="place1">
+	    <img src="japan.jpg" id="image">
+	    <div class="imagedes">
+		    <h2>JAPAN</h2>
+		    <p>Japan is one of the oldest civilizations and has a beautiful and diverse history. 
+		       The stunning, diverse scenery with mountains and breathtaking views, 
+		       which are much appreciated by the Japanese, offers so many different 
+		       experiences that attract tourists from all corners of the world.
+		    </p>
+		    <button id="cardbtn"><a href="#">More Info</a></button>
+	    </div>
+	</div>
+	<div class="placeholder" id="place2">
+	    <img src="Brazil.jpg" id="image">
+	    <div class="imagedes">
+		    <h2>Brazil</h2>
+		    <p>Brazil is a synonym for lively rhythms of samba, colourful carnival, 
+		       long stretches of sandy beaches and one of the most popular football centres. 
+		       Dive into the otherwordly landscapes, incredible wildlife and unique culture.
+		    </p>
+		    <button id="cardbtn"><a href="#">More Info</a></button>
+	    </div>
+	</div><div class="placeholder" id="place3">
+	    <img src="italy.jpg" id="image">
+	    <div class="imagedes">
+		    <h2>Italy</h2>
+		    <p>Italy is a country famous not only for its glorious landscapes, 
+		       rich history and vibrant culture, but also for the Italian divine food 
+		       that is a perfect fit for everyone. Italian food is one of the many reasons 
+		       why such a huge number of tourists come to Italy every year.     
+		    </p>
+		    <button id="cardbtn"><a href="#">More Info</a></button>
+	    </div>
+	</div>
+	
+   <!--Code for placeholder--->
+	
+   <!--Code for maincontent--->
+	
 
 </body>
 </html>
